@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,53 +17,136 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pNe-BQ-BEp">
-                                <rect key="frame" x="30" y="80" width="315" height="40"/>
-                                <color key="backgroundColor" red="0.96470588239999999" green="0.0" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="btn-9c-lAY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AfQ-y7-etl">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="719.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lug-hE-uPv">
+                                                <rect key="frame" x="4" y="77" width="367" height="223.5"/>
+                                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla 
+</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3T-cg-PYq">
+                                                <rect key="frame" x="36" y="29" width="315" height="40"/>
+                                                <color key="backgroundColor" red="0.96470588239999999" green="0.0" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="k4g-Pj-b1G"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                <state key="normal" title="Select Fruit">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onClickSelectFruit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BP5-sD-DoB"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1o-6Y-v05">
+                                                <rect key="frame" x="25" y="649.5" width="325" height="40"/>
+                                                <color key="backgroundColor" red="0.96470588239999999" green="0.0" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="LTU-hX-TQ3"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <state key="normal" title="Select Gender">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onClickSelectGender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NgN-do-CEz"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qae-4c-34K">
+                                                <rect key="frame" x="25" y="308.5" width="325" height="40"/>
+                                                <color key="backgroundColor" red="0.96470588239999999" green="0.0" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="2OY-MS-yry"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <state key="normal" title="Select Gender">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onClickSelectGender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cZW-s8-vUa"/>
+                                                    <action selector="selectGender2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="glg-Rv-o5k"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i5r-Ob-q96">
+                                                <rect key="frame" x="8" y="356.5" width="359" height="284.5"/>
+                                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla 
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla 
+</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="c1o-6Y-v05" firstAttribute="leading" secondItem="AfQ-y7-etl" secondAttribute="leading" constant="25" id="0O6-eF-v5s"/>
+                                            <constraint firstItem="i5r-Ob-q96" firstAttribute="top" secondItem="Qae-4c-34K" secondAttribute="bottom" constant="8" id="7dy-Ob-xjI"/>
+                                            <constraint firstAttribute="trailing" secondItem="lug-hE-uPv" secondAttribute="trailing" constant="4" id="9Ej-wc-W2q"/>
+                                            <constraint firstItem="Qae-4c-34K" firstAttribute="leading" secondItem="AfQ-y7-etl" secondAttribute="leading" constant="25" id="FPg-Bc-Aay"/>
+                                            <constraint firstItem="lug-hE-uPv" firstAttribute="leading" secondItem="AfQ-y7-etl" secondAttribute="leading" constant="4" id="OZ2-Ll-Hw1"/>
+                                            <constraint firstItem="c1o-6Y-v05" firstAttribute="top" secondItem="i5r-Ob-q96" secondAttribute="bottom" constant="8.5" id="RbR-JZ-L2K"/>
+                                            <constraint firstItem="P3T-cg-PYq" firstAttribute="top" secondItem="AfQ-y7-etl" secondAttribute="top" constant="29" id="TXi-fd-zJV"/>
+                                            <constraint firstAttribute="trailing" secondItem="Qae-4c-34K" secondAttribute="trailing" constant="25" id="UaV-Hm-e9s"/>
+                                            <constraint firstAttribute="trailing" secondItem="P3T-cg-PYq" secondAttribute="trailing" constant="24" id="dSQ-4L-Le2"/>
+                                            <constraint firstItem="lug-hE-uPv" firstAttribute="top" secondItem="P3T-cg-PYq" secondAttribute="bottom" constant="8" id="g4O-8p-nr9"/>
+                                            <constraint firstItem="i5r-Ob-q96" firstAttribute="leading" secondItem="AfQ-y7-etl" secondAttribute="leading" constant="8" id="ggu-5o-wWp"/>
+                                            <constraint firstAttribute="trailing" secondItem="c1o-6Y-v05" secondAttribute="trailing" constant="25" id="gsf-g3-x3G"/>
+                                            <constraint firstItem="P3T-cg-PYq" firstAttribute="leading" secondItem="AfQ-y7-etl" secondAttribute="leading" constant="36" id="gza-Lh-SCZ"/>
+                                            <constraint firstItem="Qae-4c-34K" firstAttribute="top" secondItem="lug-hE-uPv" secondAttribute="bottom" constant="8" id="jBe-gv-2Sh"/>
+                                            <constraint firstAttribute="trailing" secondItem="i5r-Ob-q96" secondAttribute="trailing" constant="8" id="kHP-38-SX7"/>
+                                            <constraint firstAttribute="bottom" secondItem="c1o-6Y-v05" secondAttribute="bottom" constant="30" id="rau-fx-2Ev"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="ArV-wo-iYz"/>
+                                    <constraint firstItem="AfQ-y7-etl" firstAttribute="top" secondItem="btn-9c-lAY" secondAttribute="top" id="3ao-Zb-8Y0"/>
+                                    <constraint firstAttribute="width" secondItem="AfQ-y7-etl" secondAttribute="width" id="LXJ-Gm-T2x"/>
+                                    <constraint firstItem="AfQ-y7-etl" firstAttribute="leading" secondItem="btn-9c-lAY" secondAttribute="leading" id="Lzc-TI-PqA"/>
+                                    <constraint firstAttribute="bottom" secondItem="AfQ-y7-etl" secondAttribute="bottom" id="Vx1-gq-uLc"/>
+                                    <constraint firstAttribute="trailing" secondItem="AfQ-y7-etl" secondAttribute="trailing" id="dg8-LE-sBP"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <state key="normal" title="Select Fruit">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="onClickSelectFruit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OyY-rV-hKV"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="97I-yY-7nr">
-                                <rect key="frame" x="30" y="213" width="315" height="40"/>
-                                <color key="backgroundColor" red="0.96470588239999999" green="0.0" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="h96-nn-BpU"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Select Gender">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="onClickSelectGender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8TL-Fg-y4o"/>
-                                </connections>
-                            </button>
+                            </scrollView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="97I-yY-7nr" secondAttribute="trailing" constant="30" id="Fei-X1-dvL"/>
-                            <constraint firstItem="pNe-BQ-BEp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="K1q-Ra-XXM"/>
-                            <constraint firstItem="97I-yY-7nr" firstAttribute="top" secondItem="pNe-BQ-BEp" secondAttribute="bottom" constant="93" id="fpO-Xb-WuW"/>
-                            <constraint firstItem="97I-yY-7nr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="gY2-b7-Mzb"/>
-                            <constraint firstItem="pNe-BQ-BEp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="hWd-Ed-cbg"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pNe-BQ-BEp" secondAttribute="trailing" constant="30" id="vbA-Lu-gFD"/>
+                            <constraint firstItem="btn-9c-lAY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="42W-Br-3wK"/>
+                            <constraint firstItem="btn-9c-lAY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="E4E-IH-6BK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="btn-9c-lAY" secondAttribute="bottom" id="gKD-hf-6j9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="btn-9c-lAY" secondAttribute="trailing" id="pfY-Ze-ZHl"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="btnSelectFruit" destination="pNe-BQ-BEp" id="pio-VT-Ctx"/>
-                        <outlet property="btnSelectGender" destination="97I-yY-7nr" id="3Rr-xF-UGT"/>
+                        <outlet property="btnSelectFruit" destination="P3T-cg-PYq" id="a2B-05-pUG"/>
+                        <outlet property="btnSelectGender" destination="c1o-6Y-v05" id="ScS-Sf-hQ3"/>
+                        <outlet property="scrollView" destination="btn-9c-lAY" id="Nyb-wD-y9H"/>
+                        <outlet property="selectGender2" destination="Qae-4c-34K" id="4fC-yJ-RtS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-271.19999999999999" y="102.99850074962519"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
